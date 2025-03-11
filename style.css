@@ -1,0 +1,80 @@
+
+/* General Styles */
+body {
+    background-color: #000000; /* Bright blue color */
+    color: #ffffff; /* White text for better contrast */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #035353; /* Slightly darker blue */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Profile Picture */
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    box-shadow: 0 0 10px rgba(119, 185, 238, 0.1);
+}
+
+/* Sections */
+.section {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Skills Grid */
+.skills-grid, .education-grid, .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.skill-box, .education-box, .contact-box {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-box:hover, .education-box:hover, .contact-box:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.2); /* Lighter on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #077077; /* Slightly darker blue */
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+}
